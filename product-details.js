@@ -1,3 +1,3 @@
-const productDetailsEleme = document.getElementById('productDetails');
+const productDetailsElem = document.querySelector('#productDetails');
 const selectedProduct = JSON.parse(window.localStorage.getItem('selectedProduct'));
-productDetailsEleme.textContent = JSON.stringify(selectedProduct, null, 2);
+productDetailsElem.textContent = JSON.stringify(selectedProduct, null, 2);
